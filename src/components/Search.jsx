@@ -15,7 +15,7 @@ const Search = () => {
       pathname: "search",
       search: `${createSearchParams({
         category: `${category}`,
-        searchTerm: `${searchTerm}`
+        searchterm: `${searchterm}`
       })}`
     })
     setsearchterm('');
