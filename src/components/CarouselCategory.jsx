@@ -1,21 +1,24 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-import { useNavigate, createSearchParams } from "react-router-dom";
+import { Navigation, Pagination,Autoplay, Scrollbar, A11y } from 'swiper/modules';
+import { createSearchParams, useNavigate } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import "swiper/css";
-import "swiper/css/navigation";
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const CarouselCategory = () => {
   const navigate = useNavigate();
-  const searchCategory = (category) => {
+  const searchCategory = (category) => (
     navigate({
       pathname: "search",
       search: `${createSearchParams({
         category: `${category}`,
-        searchTerm: ``,
-      })}`,
-    });
-  };
+        searchterm: ``
+      })}`
+    })
+  )
 
   return (
     <div className="bg-white m-3">

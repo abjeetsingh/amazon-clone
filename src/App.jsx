@@ -1,7 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import "./App.css"
-import { HomePage,Navbar, Checkout, SearchResults, ProductPage } from './components'
+import { HomePage,NavBar, Checkout, SearchResults, ProductPage } from './components'
 export const App = () => {
   return (
     <Router>

@@ -1,19 +1,25 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper";
-import { Link } from "react-router-dom";
+import { Navigation, Pagination,Autoplay, Scrollbar, A11y } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
+import {Link} from 'react-router-dom'
 const CarouselProduct = () => {
   return (
-    <div className="bg-white m-3">
-      <div className="text-2xl font-semibold p-3">Best Sellers</div>
+    <div className='bg-white m-3'>
+      <p className='text-2xl font-semibold p-3'>Best Sellers</p>
       <Swiper
         slidesPerView={7}
         spaceBetween={10}
-        navigation={true}
-        modules={[Navigation]}
+        modules= {[Navigation, Pagination]} 
+        navigation = {true}
+        // className='h-[50%]'
+        
       >
         {Array.from({ length: 9 }, (_, i) => (
           <SwiperSlide key={i}>

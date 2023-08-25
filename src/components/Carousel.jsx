@@ -1,21 +1,26 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper";
+import { Navigation, Pagination,Autoplay, Scrollbar, A11y } from 'swiper/modules';
 
-import "swiper/css";
-import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from 'swiper/react';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 const Carousel = () => {
   return (
-    <div className="h-[600px] bg-white">
-      <Swiper
-        loop={true}
+    <div className=' h-[600px] bg-white'>
+      <Swiper 
+        loop = {true} 
         spaceBetween={0}
-        navigation={true}
-        modules={[Navigation, Autoplay]}
-        autoplay={{
-          delay: 4500,
-        }}
-        className="h-[50%]"
+        modules= {[Navigation, Pagination, Autoplay]} 
+        navigation = {true}
+        className='h-[50%]'
+        autoplay = {
+          {
+            delay:4500
+          }
+        }
       >
         <SwiperSlide>
           <img src={"../images/carousel_1.jpg"} alt="Carousel POR" />
