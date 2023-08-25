@@ -21,19 +21,21 @@ const CarouselProduct = () => {
         // className='h-[50%]'
         
       >
-        {Array.from({ length: 9 }, (_, i) => (
+      
+        {
+          Array.from({length:9}, (_,i) => 
           <SwiperSlide key={i}>
             <Link to={`/product/${i}`}>
-              <img
-                src={`../images/product_${i}_small.jpg`}
-                alt="Carousel product"
-              />
+              <img  src={`../images/product_${i}_small.jpg`} alt="" />
             </Link>
           </SwiperSlide>
-        ))}
-      </Swiper>
-    </div>
-  );
-};
+          )
+        }
 
-export default CarouselProduct;
+      </Swiper>
+
+    </div>
+  )
+}
+
+export default CarouselProduct

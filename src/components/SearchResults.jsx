@@ -1,18 +1,18 @@
 import { useSearchParams, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { ProductDetails } from "./";
-import { callAPI } from "../utils/CallApi";
-import { GB_CURRENCY } from "../utils/constants";
+import { callApi } from "../utils/CallApi";
+import { GB_CURRENCY } from "../utils/constant";
 
 const SearchResults = () => {
   const [searchParams] = useSearchParams();
   const [products, setProducts] = useState(null);
 
   const getSearchResults = () => {
-    const searchTerm = searchParams.get("searchTerm");
+    const searchTerm = searchParams.get("searchterm");
     const category = searchParams.get("category");
 
-    callAPI(`data/search.json`).then((searchResults) => {
+    callApi(`data/search.json`).then((searchResults) => {
       const categoryResults = searchResults[category];
       if (searchTerm) {
         const results = categoryResults.filter((product) =>
