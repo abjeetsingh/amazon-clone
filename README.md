@@ -1,8 +1,30 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Amazon - Clone using ReactJs
 
-Currently, two official plugins are available:
+**Project Link** - ***https://master--friendly-elf-4eff0c.netlify.app***
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech We Used
+
+- ReactJs
+- Firebase Storage
+- React-Dom
+- React Redux
+
+## Features
+
+- Add to cart
+- Remove from cart
+- Neat and clean UI
+
+## Steps to run in your machine
+
+#### Run the following commands
+```
+npm i
+npm run start
+```
+
+
+
+
+#### Hope you liked this project, dont forget to ⭐ the repo.
