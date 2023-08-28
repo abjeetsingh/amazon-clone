@@ -9,7 +9,6 @@ const HomePage = () => {
   return (
     <div className=' bg-amazonclone-background '>
       <div className="min-w-[1000px] max-w-[150px] m-auto">
-        Testing
         <Carousel />
         <div className='grid grid-cols-3 xl:grid-cols-4 -mt-80'>
           {cardElement}
